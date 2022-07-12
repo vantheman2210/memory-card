@@ -1,12 +1,13 @@
 import { useState } from 'react';
+import '../Styles/Cards.css';
 
 const Cards = (props) => {
 	return (
-		<div className="cards">
+		<div className="cardContainer">
 			{[ ...Array(12) ].map((x, i) => {
 				return (
-					<div key={i} className={`card${i}`}>
-						<img alt="img" src={require('../Images/joker.jpg')} />
+					<div key={i} className="cards">
+						<img className="images" alt="img" src={require('../Images/joker.jpg')} />
 						<p>Villain</p>
 					</div>
 				);

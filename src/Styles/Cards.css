@@ -1,4 +1,18 @@
+.cardContainer { 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
+} 
+
 .cards { 
   display: flex; 
-  flex-direction: column;
+  flex-direction: column; 
+  text-align: center; 
+  border: 3px solid black;
+}
+
+.images { 
+  height: 20rem; 
+  width: 15rem;
 }
