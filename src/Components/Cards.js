@@ -1,8 +1,11 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect } from 'react';
+import Score from './Score';
 import '../Styles/Cards.css';
 
 const Cards = (props) => {
 	const [ imageData, setImageData ] = useState([]);
+
+	const [ selectedCard, setSelectedCard ] = useState([]);
 
 	useEffect(() => {
 		const fetchData = async () => {
@@ -15,22 +18,26 @@ const Cards = (props) => {
 			setImageData(shuffle);
 		};
 		fetchData();
-	}, []);
+	}, [selectedCard]);
 
-	const cardClick = () => {
-		console.log('clicked');
+	const clickedCard = (e) => {
+		const villain = e.currentTarget.children[1].textContent;
+		setSelectedCard(villain);
 	};
 
 	return (
-		<div className="cardContainer">
-			{imageData.map((data, i) => {
-				return (
-					<div onClick={cardClick} key={i} className="cards">
-						<img className="images" alt="img" src={require(`../Images/${data.url}`)} />
-						<p>{data.text}</p>
-					</div>
-				);
-			})}
+		<div className="cardScoreContainer">
+			<Score card={selectedCard} />
+			<div className="cardContainer">
+				{imageData.map((data, i) => {
+					return (
+						<div onClick={clickedCard} key={i} className="cards">
+							<img className="images" alt="img" src={require(`../Images/${data.url}`)} />
+							<p>{data.text}</p>
+						</div>
+					);
+				})}
+			</div>
 		</div>
 	);
 };

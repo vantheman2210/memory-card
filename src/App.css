@@ -1,4 +1,8 @@
 
+.headerContainer { 
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
 
 .header { 
   font-size: 2rem;
