@@ -1,0 +1,62 @@
+[
+	{
+		"card": "card1",
+		"text": "The Joker",
+		"url": "joker.jpg"
+	},
+	{
+		"card": "card2",
+		"text": "Bane",
+		"url": "bane.jpg"
+	},
+	{
+		"card": "card3",
+		"text": "Clayface",
+		"url": "clay.jpg"
+	},
+	{
+		"card": "card4",
+		"text": "Mr. Freeze",
+		"url": "freeze.jpg"
+	},
+	{
+		"card": "card5",
+		"text": "Solomon Grundy",
+		"url": "grundy.jpg"
+	},
+	{
+		"card": "card6",
+		"text": "The Mad Hatter",
+		"url": "hatter.jpg"
+	},
+	{
+		"card": "card7",
+		"text": "Poison Ivy",
+		"url": "ivy.jpg"
+	},
+	{
+		"card": "card8",
+		"text": "The Penguin",
+		"url": "penguin.jpg"
+	},
+	{
+		"card": "card9",
+		"text": "Harley Quinn",
+		"url": "quinn.jpg"
+	},
+	{
+		"card": "card10",
+		"text": "Ra's al Ghul",
+		"url": "raa.jpg"
+	},
+	{
+		"card": "card11",
+		"text": "The Riddler",
+		"url": "riddler.jpg"
+	},
+	{
+		"card": "card12",
+		"text": "Two Face",
+		"url": "twoface.jpg"
+	}
+]
