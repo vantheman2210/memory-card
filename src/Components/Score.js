@@ -4,8 +4,17 @@ import '../Styles/Score.css';
 const Score = (props) => {
 	const [ score, setScore ] = useState(0);
 	const [ highScore, setHighScore ] = useState(0);
-	const [ currentVillain, setCurrentVillain ] = useState([]);
-	const [ prevVillain, setPrevVillain ] = useState([]);
+
+	useEffect(
+		() => {
+			if (props.cards.length !== 0 && props.cards.length === 2) {
+				console.log('Works');
+				getHighScore();
+				isEqual(props.cards);
+			}
+		},
+		[ props ]
+	);
 
 	const getHighScore = () => {
 		if (score > highScore) {
@@ -13,22 +22,14 @@ const Score = (props) => {
 		}
 	};
 
-	const updateScore = () => {
-		if (currentVillain !== prevVillain) {
-			setScore(score + 1);
-			getHighScore();
-			setCurrentVillain([]);
-			setPrevVillain([]);
-		} else {
-			setScore(0);
-			setCurrentVillain([]);
-			setPrevVillain([]);
-		}
-	}; 
+	const isEqual = (arr1) => {
+		if (arr1[0].join() === arr1[1].join()) setScore(0);
+		else setScore(score + 1);
+	};
 
-  useEffect(() => { 
-    console.log(props, score)
-  }, [score])
+	const getScore = () => {
+		return;
+	};
 
 	return (
 		<div className="scoreContainer">
