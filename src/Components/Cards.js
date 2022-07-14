@@ -7,6 +7,8 @@ const Cards = (props) => {
 
 	const [ cards, setCards ] = useState([]);
 
+	const [ singleCard, setSingleCard ] = useState([]);
+
 	useEffect(
 		() => {
 			const fetchData = async () => {
@@ -26,27 +28,21 @@ const Cards = (props) => {
 	useEffect(
 		() => {
 			if (cards.length !== 0 && cards.length === 2) {
-				console.log('Works');
 				setCards([]);
 			}
 		},
 		[ cards ]
 	);
 
-	const compare = (arg) => {
-		if (arg.length !== 0 && arg.length === 2) {
-			console.log('works');
-		} else console.log('not filled');
-	};
-
 	const clickedCard = (e) => {
 		const villain = [ e.currentTarget.children[1].textContent ];
 		setCards((prevState) => [ ...prevState, villain ]);
+		setSingleCard(villain);
 	};
 
 	return (
 		<div className="cardScoreContainer">
-			<Score cards={cards} />
+			<Score cards={cards} card={singleCard} />
 			<div className="cardContainer">
 				{imageData.map((data, i) => {
 					return (
