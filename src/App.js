@@ -7,7 +7,7 @@ import Score from './Components/Score';
 function App() {
 	return (
 		<main className="App">
-			<nav className='headerContainer'>
+			<nav className="headerContainer">
 				<Header />
 			</nav>
 			<div className="container">

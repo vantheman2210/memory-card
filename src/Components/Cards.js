@@ -23,27 +23,26 @@ const Cards = (props) => {
 		[ cards ]
 	);
 
-	useEffect(() => {  
-		if (cards.length !== 0 && cards.length === 2) {	
-			console.log('Works')
-			setCards([]);
-		}
-	
-		
-	}, [cards]);
+	useEffect(
+		() => {
+			if (cards.length !== 0 && cards.length === 2) {
+				console.log('Works');
+				setCards([]);
+			}
+		},
+		[ cards ]
+	);
 
 	const compare = (arg) => {
 		if (arg.length !== 0 && arg.length === 2) {
 			console.log('works');
 		} else console.log('not filled');
-	}; 
+	};
 
 	const clickedCard = (e) => {
 		const villain = [ e.currentTarget.children[1].textContent ];
-		setCards((prevState) => [ ...prevState, villain ]);	
+		setCards((prevState) => [ ...prevState, villain ]);
 	};
-
-	
 
 	return (
 		<div className="cardScoreContainer">
