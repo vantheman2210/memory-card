@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/memory-card/static/css/main.42316125.css",
+    "main.js": "/memory-card/static/js/main.aef80189.js",
+    "static/js/787.d6a8b40f.chunk.js": "/memory-card/static/js/787.d6a8b40f.chunk.js",
+    "static/media/Anton-Regular.ttf": "/memory-card/static/media/Anton-Regular.170b842f9a8cd6150a0d.ttf",
+    "static/media/grundy.jpg": "/memory-card/static/media/grundy.de4a10f93a20f1fe2d88.jpg",
+    "static/media/bane.jpg": "/memory-card/static/media/bane.bae8a4d2384e9e85302f.jpg",
+    "static/media/riddler.jpg": "/memory-card/static/media/riddler.231f31075e2d618b4821.jpg",
+    "static/media/raa.jpg": "/memory-card/static/media/raa.b36ec3236603416df497.jpg",
+    "static/media/quinn.jpg": "/memory-card/static/media/quinn.54f80a58cf16d53a01be.jpg",
+    "static/media/penguin.jpg": "/memory-card/static/media/penguin.3e553545b1f1c58c7824.jpg",
+    "static/media/twoface.jpg": "/memory-card/static/media/twoface.037bd9dfe14fc4414881.jpg",
+    "static/media/joker.jpg": "/memory-card/static/media/joker.f71980d65399f7fe886c.jpg",
+    "static/media/hatter.jpg": "/memory-card/static/media/hatter.6bc5408ce4fde0bfa509.jpg",
+    "static/media/ivy.jpg": "/memory-card/static/media/ivy.f5b47e186faffbe7ed35.jpg",
+    "static/media/freeze.jpg": "/memory-card/static/media/freeze.2edb4887079f95e6cd5d.jpg",
+    "static/media/clay.jpg": "/memory-card/static/media/clay.af9f710b1e734f13cd0e.jpg",
+    "index.html": "/memory-card/index.html",
+    "main.42316125.css.map": "/memory-card/static/css/main.42316125.css.map",
+    "main.aef80189.js.map": "/memory-card/static/js/main.aef80189.js.map",
+    "787.d6a8b40f.chunk.js.map": "/memory-card/static/js/787.d6a8b40f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.42316125.css",
+    "static/js/main.aef80189.js"
+  ]
+}
