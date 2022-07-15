@@ -19,11 +19,8 @@ const Score = (props) => {
 	useEffect(
 		() => {
 			const selectedCardsFlat = selectedCards.flat(2);
-
-			console.log(selectedCardsFlat);
-
+			getHighScore();
 			if (selectedCardsFlat.length > 2 && selectedCardsFlat.includes(props.card.toString())) {
-				console.log('here');
 				getHighScore();
 				setScore(0);
 			} else return;
@@ -41,7 +38,10 @@ const Score = (props) => {
 		if (arr1[0].join() === arr1[1].join()) {
 			getHighScore();
 			setScore(0);
-		} else setScore(score + 1);
+		} else {
+			setScore(score + 1);
+			getHighScore();
+		}
 	};
 
 	return (

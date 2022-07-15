@@ -1,14 +1,60 @@
+@font-face {
+  font-family: 'Anton';
+  src: url('./Fonts/Anton-Regular.ttf');
+}
+
+* { 
+  font-family: 'Anton', sans-serif;
+}
+
+html, body, #root{ 
+  height: 100%;
+  background-color: rgb(212, 212, 212);
+  
+} 
+
+.App { 
+  height: 100%;
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-between;
+
+}
 
 .headerContainer { 
-  display: grid;
-  grid-template-columns: 3fr 1fr;
+  display: flex;
+  justify-content: center;
+  height: fit-content;
 }
 
 .header { 
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
+  height: fit-content;
 } 
 
+.header > h1 { 
+  margin: 0;
+  margin-bottom: 3rem;
+  letter-spacing: 1rem;
+}
+
+.cardScoreContainer { 
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: fit-content; 
+  align-items: center;
+}
+
 footer { 
-  text-align: center;
+  margin-top: 1rem;
+  display: flex;
+  margin-top: 1rem;
+  /* text-align: center; */
+  justify-content: center;
+}
+
+footer > p { 
+  width: fit-content;
 }
